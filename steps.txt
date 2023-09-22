@@ -10,6 +10,9 @@ During modular coding- update entity, configuration.py
 component
 update pipeline and main file.
 
+after evaluation-> prediction.py , app.py, index.html , results.html and static
+docker file and main.yaml under github workflows
+
 
 #For mlflow-
 1-Login in dagshub and connect github repo
