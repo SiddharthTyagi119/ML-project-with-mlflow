@@ -5,7 +5,16 @@ logging and exception
 Step to be followed for every component--
 [defing configurations in config.yaml , schema.yaml and params.yaml 
 Define entity , pipeline ,component and configuration manager ipynb file
-define constant in its init file  and common functions in utils]
+define constant in its init file  and common functions in utils.py]
 During modular coding- update entity, configuration.py
 component
 update pipeline and main file.
+
+
+#For mlflow-
+1-Login in dagshub and connect github repo
+2-Copy the experiment tracking URI from dagshub
+3-Export the tracking username , uri and password on cmd and have to mention in cell in notebook
+4-Mention tracking uri in model_evaluation configuration_manager
+5-Set tracking uri in component
+6-After training open mlflow UI.
