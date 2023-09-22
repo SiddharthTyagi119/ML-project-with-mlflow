@@ -1,6 +1,8 @@
 README.md
 setup.py
 src/mlProject/__init__.py
+src/mlProject/exception.py
+src/mlProject/logger.py
 src/mlProject.egg-info/PKG-INFO
 src/mlProject.egg-info/SOURCES.txt
 src/mlProject.egg-info/dependency_links.txt

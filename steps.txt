@@ -1,4 +1,6 @@
 template.py
 requirements and setup
-logging is done in constructor file of project and exception by custom box library
+logging and exception
+config.yaml
+research data_ingestion
 

@@ -1,3 +1,5 @@
-from mlProject import logger
+from src.mlProject.logger import logging
+from src.mlProject.exception import CustomException
 
-logger.info("welcome too our custom logging")
+
+logging.info("welcome too our custom logging")
