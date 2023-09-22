@@ -6,4 +6,5 @@ Data Ingestion--
 [defing configurations in config.yaml , schema.yaml and params.yaml 
 In data_ingestion.ipynb-> define constant in its init file  and common functions in utils]
 During modular coding (components_> data ingestion)- update entity, configuration.py
-update pipeline
+component
+update pipeline and main file

@@ -20,6 +20,7 @@ class DataTransformationTrainingPipeline:
             with open(Path("artifacts/data_validation/status.txt"), "r") as f:
                 status = f.read().split(" ")[-1]
 
+            #if data validation status is true then only run the pipeline
             if status == "True":
                 config = ConfigurationManager()
                 data_transformation_config = config.get_data_transformation_config()
@@ -38,12 +39,12 @@ class DataTransformationTrainingPipeline:
 
 if __name__ == '__main__':
     try:
-        logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+        logging.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
         obj = DataTransformationTrainingPipeline()
         obj.main()
-        logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+        logging.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
     except Exception as e:
-        logger.exception(e)
+        logging.exception(e)
         raise e
 
 
